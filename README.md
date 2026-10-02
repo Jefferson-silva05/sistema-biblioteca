@@ -6,7 +6,7 @@ Um sistema de gerenciamento de biblioteca desenvolvido em Python, com o objetivo
 
 O projeto permite gerenciar um pequeno acervo de livros por meio de um menu interativo no terminal. Nele, é possível cadastrar, consultar, listar, atualizar e remover livros, mantendo os dados salvos mesmo após encerrar o programa.
 
-Funcionalidades
+## Funcionalidades
 
 - Cadastrar livros com ID, título, autor e ano de publicação.
 - Listar todos os livros cadastrados.
@@ -16,13 +16,13 @@ Funcionalidades
 - Validar entradas do usuário para evitar dados inválidos.
 - Salvar e carregar informações utilizando arquivos JSON.
 
-Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - Python: Linguagem utilizada no desenvolvimento.
 - JSON: Utilizado para armazenar os dados dos livros.
 - Bibliotecas nativas: "json" e "time".
 
-Estrutura do projeto
+### Estrutura do projeto
 
 biblioteca/
 │
