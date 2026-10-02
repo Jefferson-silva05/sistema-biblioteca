@@ -32,16 +32,16 @@ biblioteca/
 ├── biblioteca.json
 └── README.md
 
-Organização dos arquivos:
+## Organização dos arquivos:
 
 - "biblioteca.py": Arquivo principal, responsável pelo menu e funcionamento do sistema.
 - "modulobiblioteca.py": Contém funções de validação e tratamento de entradas.
 - "arquivo_biblioteca.py": Responsável pelas operações de leitura, gravação, busca e exclusão de livros.
 - "biblioteca.json": Arquivo utilizado para armazenar os dados.
 
-Como executar
+## Como executar
 
-Pré-requisitos:
+### Pré-requisitos:
 
 - Python 3.10 ou superior.
 
