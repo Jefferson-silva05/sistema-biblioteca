@@ -23,7 +23,7 @@ O projeto permite gerenciar um pequeno acervo de livros por meio de um menu inte
 - Bibliotecas nativas: "json" e "time".
 
 ### Estrutura do projeto
-
+'''
 biblioteca/
 │
 ├── biblioteca.py
@@ -31,6 +31,7 @@ biblioteca/
 ├── arquivo_biblioteca.py
 ├── biblioteca.json
 └── README.md
+'''
 
 ## Organização dos arquivos:
 
