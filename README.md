@@ -1,8 +1,8 @@
-## Sistema de Biblioteca 
+# Sistema de Biblioteca 
 
 Um sistema de gerenciamento de biblioteca desenvolvido em Python, com o objetivo de praticar lógica de programação, organização de código e manipulação de arquivos JSON.
 
-# Sobre o projeto
+### Sobre o projeto
 
 O projeto permite gerenciar um pequeno acervo de livros por meio de um menu interativo no terminal. Nele, é possível cadastrar, consultar, listar, atualizar e remover livros, mantendo os dados salvos mesmo após encerrar o programa.
 
