@@ -1,7 +1,7 @@
-from modulobiblioteca import *
-from arquivo_biblioteca import *
+from modulo import *
+from arquivo import *
 from time import sleep
-arq = 'python/projetos/biblioteca/biblioteca.json'
+arq = 'biblioteca.json'
 biblioteca = carregar(arq)
 
 print('=' * 45)
