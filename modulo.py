@@ -6,6 +6,7 @@ def leiaInt(n):
       print('Erro! Digite um número valido')
     else:
       return a
+
 def validarAno(ano):
   from datetime import date
   
@@ -20,6 +21,7 @@ def validarAno(ano):
         return a
       else:
         print('Ano Invalido')
+
 def disposicao(livro):
   v = True
   while True:
@@ -32,6 +34,7 @@ def disposicao(livro):
   else:
     v = False
     return v
+    
 def validarID(number, bi):
   while True:
     try:

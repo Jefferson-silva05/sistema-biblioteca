@@ -1,8 +1,8 @@
 from modulo import *
 from arquivo import *
 from time import sleep
-arq = 'biblioteca.json'
-biblioteca = carregar(arq)
+arq = 'biblioteca.json' #caminho do arquivo
+biblioteca = carregar(arq) # carrega o arquivo para melhor manejo
 
 print('=' * 45)
 print('Sistema Biblioteca'.center(45))
@@ -14,8 +14,11 @@ while True:
 [ 4 ] Atualizar Disponibilidade
 [ 5 ] Remover Livro
 [ 6 ] Sair''')
+
+  # Digite 66 para preencher a biblioteca.json com dados predefinidos para testes rápidos.
+
   opc = leiaInt('Sua Opção: ')
-  match opc:
+  match opc: # Pede as informações do livro e dps coloca na funcao "adicionar" para acrescentar ao json
     case 1:
       ID = validarID('ID (3 digitos numericos): ', biblioteca)
       titulo = str(input('Titulo: '))
@@ -24,9 +27,10 @@ while True:
       disponivel = disposicao('Disponivel (sim/não): ')
       dic = {'ID': ID, 'titulo': titulo, 'autor': autor, 'ano': ano, 'disponivel': disponivel}
       biblioteca.append(dic)
-      adicionar(arq, biblioteca)
+      adicionar(arq, biblioteca) 
       print('Adicionado com Sucesso')
-    case 2:
+
+    case 2: # Lista todos os livros existentes na biblioteca
       if biblioteca:
         print('=' * 45)
         print('Listando todos os livros'.center(45))
@@ -37,16 +41,15 @@ while True:
           sleep(0.7)
       else:
         print("Nenhum Livro Adicionado!")
+
     case 3:
       if biblioteca:
         buscar(biblioteca)
+
     case 4:
       print('=' * 45)
       print('Disponibilidade de Livros'.center(45))
       print('=' * 45)
-      for i, v in enumerate(biblioteca):
-        print(f'ID {v["ID"]} - {v["titulo"]}\n Disponivel: {v["disponivel"]}')
-      print()
       pro = leiaInt('ID do Livro: ')
       for i in biblioteca:
         if i['ID'] == pro:
@@ -57,15 +60,20 @@ while True:
           break
       else:
         print('Erro! ID incorreto')
+
     case 5:
       print('=' * 45)
       print('Excluir livro'.center(45))
       print('=' * 45)
       excluir(arq, biblioteca)
+
     case 6:
       print('Saindo...')
       sleep(1.7)
       break
+
+    case 66: #adiciona livros na bilbioteca de forma rapida para teste rapidos
+      biblioteca = carregar_livros_testes(arq)
     case _:
       print('Erro! Digite uma das opcoes')
   sleep(0.8)
