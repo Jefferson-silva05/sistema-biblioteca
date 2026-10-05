@@ -16,6 +16,12 @@ O projeto permite gerenciar um pequeno acervo de livros por meio de um menu inte
 - Validar entradas do usuário para evitar dados inválidos.
 - Salvar e carregar informações utilizando arquivos JSON.
 
+### Função de teste
+
+O sistema possui uma função para adicionar automaticamente 10 livros predefinidos à biblioteca, facilitando os testes sem a necessidade de cadastrar cada livro manualmente.
+
+Para utilizar, selecione a opção `66` no menu principal.
+
 ## Tecnologias utilizadas
 
 - Python: Linguagem utilizada no desenvolvimento.
